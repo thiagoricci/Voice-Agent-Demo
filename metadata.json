@@ -1,0 +1,7 @@
+{
+  "name": "Dara Voice Tech",
+  "description": "A showcase of AI voice agents for varying business needs using Gemini Live API.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
