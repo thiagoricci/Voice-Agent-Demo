@@ -53,7 +53,7 @@ export const AGENTS: Record<AgentType, AgentConfig> = {
     1. Speak the OPENING LINE immediately.
     2. Ask for their name and their pet's name.
     3. Ask for the reason for the call (e.g., "Is this for an appointment, a refill, or a medical question?").
-    4. Assure them a team member will call back within 15 minutes.
+    4. Assure them a team member will call back as soon as possible.
     
     Keep the tone calm, reassuring, and professional.`
   },
