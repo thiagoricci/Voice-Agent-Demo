@@ -196,11 +196,15 @@ export function useLiveAgent({ systemInstruction, voiceName }: UseLiveAgentProps
                    
                    // Generate subtle white noise
                    for (let i = 0; i < noiseData.length; i++) {
-                       noiseData[i] = (Math.random() * 2 - 1) * 0.01; 
+                       noiseData[i] = (Math.random() * 2 - 1) * 0.01;
                    }
                    
                    const pcmBlob = createPcmBlob(noiseData);
                    session.sendRealtimeInput({ media: pcmBlob });
+                   
+                   // Additionally, send a simple text input to trigger the agent to speak the opening line
+                   // The system instruction should contain the opening line that needs to be spoken immediately
+                   session.sendClientContent({ turns: [{ role: "user", parts: [{ text: "Hello." }] }] });
                 }).catch(err => console.log("Kickstart skipped or failed", err));
             }, 500); // 500ms delay for stability
           },
