@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DaraVoiceTech - Front Desk AI</title>
+    <title>Estalio - AI Voice Assistant</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
@@ -11,9 +11,9 @@
         theme: {
           extend: {
             colors: {
-              dara: {
-                navy: '#0B3B59', // Deep Navy from Logo
-                cyan: '#00C2E0', // Cyan from Bird
+              estalio: {
+                navy: '#1A365D', // Professional Navy
+                gold: '#C5A059', // Luxury Gold
                 purple: '#8B5CF6', // Accent purple
               }
             },
@@ -39,22 +39,22 @@
           scrollbar-width: none;
       }
       .blob-pulse {
-        box-shadow: 0 0 0 0 rgba(0, 194, 224, 0.7); /* Dara Cyan */
+        box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.7); /* Estalio Gold */
         transform: scale(1);
-        animation: pulse-cyan 2s infinite;
+        animation: pulse-gold 2s infinite;
       }
-      @keyframes pulse-cyan {
+      @keyframes pulse-gold {
         0% {
           transform: scale(0.95);
-          box-shadow: 0 0 0 0 rgba(0, 194, 224, 0.7);
+          box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.7);
         }
         70% {
           transform: scale(1);
-          box-shadow: 0 0 0 15px rgba(0, 194, 224, 0);
+          box-shadow: 0 0 0 15px rgba(197, 160, 89, 0);
         }
         100% {
           transform: scale(0.95);
-          box-shadow: 0 0 0 0 rgba(0, 194, 224, 0);
+          box-shadow: 0 0 0 0 rgba(197, 160, 89, 0);
         }
       }
     </style>

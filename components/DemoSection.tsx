@@ -15,10 +15,10 @@ const ActiveDemo: React.FC<{ agent: AgentConfig }> = ({ agent }) => {
       
       {/* Header inside card */}
       <div className="text-center z-10 w-full max-w-2xl">
-        <div className="inline-block px-3 py-1 rounded-full bg-dara-cyan/10 text-dara-cyan text-[10px] font-bold tracking-widest uppercase mb-4">
+        <div className="inline-block px-3 py-1 rounded-full bg-estalio-gold/10 text-estalio-gold text-[10px] font-bold tracking-widest uppercase mb-4">
             {agent.subtitle}
         </div>
-        <h3 className="text-3xl font-extrabold text-dara-navy mb-4">{agent.title}</h3>
+        <h3 className="text-3xl font-extrabold text-estalio-navy mb-4">{agent.title}</h3>
         <p className="text-slate-600 text-base leading-relaxed">
           {agent.description}
         </p>
@@ -43,7 +43,7 @@ const ActiveDemo: React.FC<{ agent: AgentConfig }> = ({ agent }) => {
         {!isConnected ? (
           <button
             onClick={connect}
-            className="w-full py-3 bg-gradient-to-r from-dara-navy to-[#0F4C75] hover:to-dara-navy text-white rounded-2xl font-bold text-base shadow-xl shadow-dara-navy/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-3 group-hover:shadow-dara-navy/30"
+            className="w-full py-3 bg-gradient-to-r from-estalio-navy to-[#0F4C75] hover:to-estalio-navy text-white rounded-2xl font-bold text-base shadow-xl shadow-estalio-navy/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-3 group-hover:shadow-estalio-navy/30"
           >
             <span className="group-hover:scale-110 transition-transform">🎙️</span>
             Start Demo
@@ -57,7 +57,7 @@ const ActiveDemo: React.FC<{ agent: AgentConfig }> = ({ agent }) => {
           </button>
         )}
          <p className="text-xs text-slate-400 text-center mt-6 font-medium">
-            Microphone access required • Dara Voice Tech
+            Microphone access required • Estalio Real Estate
          </p>
       </div>
 
@@ -75,9 +75,9 @@ export const DemoSection: React.FC = () => {
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-24" id="demos">
       <div className="mb-16 text-center">
-        <h2 className="text-3xl md:text-5xl font-extrabold text-dara-navy mb-6">Test Our Agents</h2>
+        <h2 className="text-3xl md:text-5xl font-extrabold text-estalio-navy mb-6">Test Our Agents</h2>
         <p className="text-slate-500 max-w-2xl mx-auto text-xl">
-          Select a scenario below to hear how Dara Voice Tech handles real-world interactions for <strong>Dara Animal Clinic</strong>.
+          Select a scenario below to hear how Estalio handles real-world interactions for <strong>Real Estate Agencies</strong>.
         </p>
       </div>
 
@@ -91,8 +91,8 @@ export const DemoSection: React.FC = () => {
               onClick={() => setSelectedAgentId(agent.id)}
               className={`w-full text-left p-4 rounded-2xl transition-all duration-300 border group cursor-pointer relative overflow-hidden shadow-sm hover:shadow-md ${
                 selectedAgentId === agent.id
-                  ? 'bg-dara-navy border-dara-navy text-white shadow-xl shadow-dara-navy/20 transform scale-[1.02]'
-                  : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50 hover:border-dara-cyan/50'
+                  ? 'bg-estalio-navy border-estalio-navy text-white shadow-xl shadow-estalio-navy/20 transform scale-[1.02]'
+                  : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50 hover:border-estalio-gold/50'
               }`}
             >
               <div className="flex items-center space-x-3 relative z-10">
@@ -103,12 +103,12 @@ export const DemoSection: React.FC = () => {
                 </div>
                 <div>
                   <span className={`text-[10px] font-bold uppercase tracking-wider transition-colors ${
-                      selectedAgentId === agent.id ? 'text-dara-cyan' : 'text-slate-400 group-hover:text-dara-navy'
+                      selectedAgentId === agent.id ? 'text-estalio-gold' : 'text-slate-400 group-hover:text-estalio-navy'
                   }`}>
                     {agent.subtitle.split(':')[0]}
                   </span>
                   <h3 className={`font-bold text-base mt-0.5 ${
-                      selectedAgentId === agent.id ? 'text-white' : 'text-dara-navy'
+                      selectedAgentId === agent.id ? 'text-white' : 'text-estalio-navy'
                   }`}>
                     {agent.title}
                   </h3>
